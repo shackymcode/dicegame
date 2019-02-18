@@ -1,0 +1,57 @@
+
+body {
+    background-image: linear-gradient(to right, rgb(217, 255, 0), rgb(10, 121, 10));
+  }
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        'left mid right';
+}
+
+
+#diceImg {
+
+    width: 300px;
+    height: 300px;
+    grid-area: mid;
+    text-align: center;
+
+}
+
+.btn {
+
+    border: 20px solid black;
+    border-radius: 28px;
+    color: black;
+    padding: 20px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-left: 80px;
+    grid-area: right;
+
+}
+
+.btn:hover {
+    background-color: yellow;
+}
+
+#dice {
+    font-size: 60px;
+    grid-area: mid;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#startGame {
+    grid-area: left;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
